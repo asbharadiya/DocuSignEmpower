@@ -1,0 +1,25 @@
+.templates-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.templates-list .template-block {
+  width: 400px;
+  text-align: center;
+  padding: 30px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.templates-list .template-block:hover, .templates-list .template-block.selected {
+  outline: 1px solid;
+}
+
+.templates-list .template-block .template-title {
+
+}
+
+.templates-list .template-block .template-desc {
+
+}

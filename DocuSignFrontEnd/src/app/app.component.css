@@ -1,0 +1,47 @@
+header {
+  height: 70px;
+  background: #337ab7;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: #fff;
+}
+
+header .logo-container {
+  float: left;
+  padding: 0px 30px;
+}
+
+header .logo-container .logo {
+  line-height: 70px;
+  font-size: 22px;
+}
+
+header .nav {
+  margin: 0px;
+}
+
+header .nav>li {
+  padding: 10px 30px;
+}
+
+header .nav>li>a {
+  color: #fff;
+}
+
+header .nav>li>a:hover {
+  background: transparent;
+  border-bottom: 1px solid #fff;
+}
+
+header .nav>li>a:focus, header .nav>li>a:active {
+  background: transparent;
+  outline: none;
+}
+
+.page-content {
+  padding-top: 100px;
+}
+
+

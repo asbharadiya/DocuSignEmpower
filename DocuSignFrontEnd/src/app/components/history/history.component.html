@@ -1,0 +1,54 @@
+<div class="history-content">
+  <p class="note-red">NOTE: All completed documents are archived to Google Cloud Storage daily.</p>
+</div>
+
+<div class="envelopes-list">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Created Time</th>
+        <th>Sent Time</th>
+        <th>Status</th>
+        <th>Completed Time</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of envelopes; let i = index">
+        <td>{{e.subject}}</td>
+        <td>{{e.createdDateTime}}</td>
+        <td>{{e.sentDateTime}}</td>
+        <td>{{e.status}}</td>
+        <td>{{e.completedDateTime}}</td>
+        <td><button class="btn btn-primary" (click)="viewEvents(i)">View events</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-modal [blocking]='true' modalId="events-modal" class="events-modal">
+  <span class="close-button" (click)="closeEventsModal()"><i class="fa fa-times" aria-hidden="true"></i></span>
+  <div class="form-body">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>User</th>
+        <th>Action</th>
+        <th>Message</th>
+        <th>Envelope Status</th>
+        <th>Log Time</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let ee of envelopeEvents">
+        <td>{{ee.eventFields[2].value}}</td>
+        <td>{{ee.eventFields[4].value}}</td>
+        <td>{{ee.eventFields[5].value}}</td>
+        <td>{{ee.eventFields[6].value}}</td>
+        <td>{{ee.eventFields[0].value}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</app-modal>

@@ -1,0 +1,15 @@
+.history-content {
+  padding: 30px;
+}
+
+.note-red {
+  color: red;
+}
+
+.envelopes-list {
+  padding: 30px;
+}
+
+.events-modal ::ng-deep .modal {
+  width: 75%;
+}

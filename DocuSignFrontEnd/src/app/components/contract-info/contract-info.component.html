@@ -1,0 +1,31 @@
+<div class="tab-pane fade in active">
+
+  <div class="templates-info">
+    <div class="templates-info-section" *ngFor="let key of recipientsKeys">
+      <div *ngIf="isArray(recipients[key]) && recipients[key].length>0">
+        <h4 class="text-center">{{key}}</h4>
+        <div class="templates-info-block" *ngFor="let r of recipients[key]">
+          <div class="row form-group">
+            <label class="col-xs-3">Role</label>
+            <div class="col-xs-9">
+              <span>{{r.roleName}}</span>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label class="col-xs-3">Name</label>
+            <div class="col-xs-9">
+              <input class="form-control" [(ngModel)]="r.name"/>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label class="col-xs-3">Email</label>
+            <div class="col-xs-9">
+              <input class="form-control" [(ngModel)]="r.email"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

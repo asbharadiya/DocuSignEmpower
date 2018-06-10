@@ -1,0 +1,27 @@
+.templates-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.templates-info .templates-info-section {
+  display: flex;
+  justify-content: center;
+}
+
+.templates-info .templates-info-section .templates-info-block {
+  width: 400px;
+  margin: 15px;
+  padding: 30px;
+  outline: 1px solid;
+  float: left;
+}
+
+.templates-info .templates-info-section .templates-info-block .form-group label {
+  margin: 0px;
+  line-height: 34px;
+}
+
+.templates-info .templates-info-section .templates-info-block .form-group span {
+  line-height: 34px;
+}

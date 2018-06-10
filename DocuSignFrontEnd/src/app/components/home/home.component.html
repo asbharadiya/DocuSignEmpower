@@ -1,0 +1,20 @@
+<app-nav-bar></app-nav-bar>
+<div class="tab-content">
+  <router-outlet></router-outlet>
+</div>
+<div class="nav-buttons">
+  <button class="btn btn-primary" (click)="prev()" *ngIf="isPrevShown()">Prev</button>
+  <button class="btn btn-primary" (click)="next()" *ngIf="isNextShown()">Next</button>
+</div>
+
+
+<app-modal [blocking]='true' modalId="payment-modal" class="payment-modal">
+  <div class="form-body">
+    <p>Please make sure that all the recipients information is correct.</p>
+    <p>You are required to make a payment to start processing this document.</p>
+  </div>
+  <div class="form-footer">
+    <button class="btn btn-default" (click)="closePaymentModal()">Cancel</button>
+    <button class="btn btn-primary" (click)="createAndSendEnvelope()">Pay & confirm</button>
+  </div>
+</app-modal>

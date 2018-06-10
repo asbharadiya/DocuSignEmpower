@@ -1,0 +1,7 @@
+.templates-done {
+  text-align: center;
+}
+
+.templates-done .success {
+  color: green;
+}

@@ -1,0 +1,35 @@
+<div class="app-nav-bar">
+  <ul class="nav nav-tabs">
+
+    <!-- circular user icon -->
+    <li>
+      <a routerLink="template" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-toggle="tab">
+        <span class="round-tabs">
+            1
+        </span>
+        <label>Select Template</label>
+      </a>
+    </li>
+
+    <!-- circular tasks icon -->
+    <li>
+      <a routerLink="information" routerLinkActive="active" data-toggle="tab">
+        <span class="round-tabs">
+            2
+        </span>
+        <label>Enter Recipients</label>
+      </a>
+    </li>
+
+    <!-- circular home icon -->
+    <li>
+      <a routerLink="done" routerLinkActive="active" data-toggle="tab">
+        <span class="round-tabs">
+            3
+        </span>
+        <label>You're Done!</label>
+      </a>
+    </li>
+
+  </ul>
+</div>
