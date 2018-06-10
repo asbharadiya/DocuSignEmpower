@@ -29,8 +29,8 @@ public class DocumentServiceController {
     private static final String privateKeyFilename = "/src/test/keys/docusign_private_key.txt";
     private static final String OAuthBaseUrl = "account-d.docusign.com";
 
-    private static final String IntegratorKey = "cd3ed796-79b7-4629-8bd7-f38bc378ad66";
-    private static final String UserId = "13eca14d-0ce7-4ac7-ad49-1b331bcb4f5a";
+    private static final String IntegratorKey = "[]";
+    private static final String UserId = "[]";
     private static final String RedirectURI = "http://localhost/assignAuth";
 
     @Autowired
@@ -79,7 +79,7 @@ public class DocumentServiceController {
 
     public static void setKeys() throws Exception{
 
-        String ClientSecret = "c83a5700-5eb0-4e72-bdab-8869eed8b710";
+        String ClientSecret = "[]";
         String AuthServerUrl = "https://account-d.docusign.com";
         String RestApiUrl = "https://demo.docusign.net/restapi";
 
